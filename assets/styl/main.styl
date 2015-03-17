@@ -4,7 +4,7 @@ $mainGray = #778081
 @import fonts
 @import 'jeet'
 
-edit()
+/*edit()*/
 
 *
   box-sizing: border-box
@@ -24,6 +24,9 @@ body
   counter-reset: member
   background: url(../img/textura.png) repeat
 
+.hidden
+  display: none
+
 .clear
   &:after
     content: ''
@@ -36,60 +39,9 @@ body
 
 .wrapper_relative
   position: relative
-  
-.page-header
-  height: 90px
-  
-.header-logo
-  float: left
-  height: 100%
-  width: 160px
 
-.header-logo__link
-  width 100%
-  height: 100%
-  background: url(../img/logo.png) 0 15px no-repeat
-  display: block
-
-.header-nav
-  float: right
-  height: 100%
-  
-.header-nav__list
-  height: inherit
-
-.header-nav__item
-  line-height: 90px
-  height: 100%
-  margin-left: 20px
-  float: left
-  text-align: center
-  display: inline-block
-  &:first-child
-    margin-left: 0
-  &:before
-    content: ''
-    display: inline-block
-    vertical-align: middle
-    height: 100%
-    width: 0
-
-.header-nav__link
-  line-height: 24px
-  font-size: 22px
-  display: inline-block
-  vertical-align: middle
-  color: #778081
-  padding: 2px 0
-  text-decoration: none
-
-.header-nav__link_active
-  border-bottom: 2px solid $mainRed
-  color: #454545
-  cursor: default
-
-.main-slider
-  height: 520px
+@import header
+@import slider
 
 .main-title
   color: #464646
@@ -296,97 +248,4 @@ body
   right: 0
   top: 0
 
-@media (max-width: 1200px)
-  .wrapper
-    width: 940px
-  
-@media (max-width: 1000px)
-  .wrapper
-    width: 100%
-    padding-left: 30px
-    padding-right: 30px
-  .main-footer__copyrights
-    left: 30px
-  .main-footer__epam-made
-    right: 30px
-
-@media (max-width: 800px)
-  .main-page-article
-    col(1)
-    margin-bottom: 50px
-    &:last-child
-      margin-bottom: 0
-  .news
-    stack()
-    margin-bottom: 50px
-  .conference-agenda
-    col(1/2)
-  .members
-    col(1/2)
-  .social-links__item
-    margin-left: 60px
-  .main-footer
-    height: 150px
-    text-align: center
-  .main-footer__copyrights
-    position: static
-    line-height: 50px
-  .main-footer__nav
-    line-height: 50px
-  .main-footer__epam-made
-    position: static
-    line-height: 50px
-
-@media (max-width: 660px)
-  .social-links__item
-    margin-left: 30px
-
-@media (max-width: 520px)
-  .header-nav
-    display: none
-  .social-links__item
-    margin-left: 20px
-    width: 29px
-    height: 29px
-
-  .news, .conference-agenda, .members
-    col(1)
-    margin-bottom: 50px
-    &:last-child
-      margin-bottom: 0
-
-  .main-page-article__image
-    float: none
-    margin: 0 0 20px 0
-    width: 100%
-    height: 0
-    padding-bottom: 100%
-
-  .social-links__link_facebook
-    background-image: url(../img/Facebook_mobile.png)
-  .social-links__link_twitter
-    background-image: url(../img/Twitter_mobile.png)
-  .social-links__link_linkedin
-    background-image: url(../img/Linkedin_mobile.png)
-  .social-links__link_instagram
-    background-image: url(../img/Instagram_mobile.png)
-  .social-links__link_googleplus
-    background-image: url(../img/Google_mobile.png)
-  .social-links__link_youtube
-    background-image: url(../img/Youtube_mobile.png)
-
-  @media (-webkit-min-device-pixel-ratio: 2),  (min-resolution: 192dpi)
-    .social-links__link
-      background-size: 29px 29px
-    .social-links__link_facebook
-      background-image: url(../img/Facebook_mobile@2x.png)
-    .social-links__link_twitter
-      background-image: url(../img/Twitter_mobile@2x.png)
-    .social-links__link_linkedin
-      background-image: url(../img/Linkedin_mobile@2x.png)
-    .social-links__link_instagram
-      background-image: url(../img/Instagram_mobile@2x.png)
-    .social-links__link_googleplus
-      background-image: url(../img/Google_mobile@2x.png)
-    .social-links__link_youtube
-      background-image: url(../img/Youtube_mobile@2x.png)
+@import responsive

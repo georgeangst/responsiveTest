@@ -1,28 +1,41 @@
-<!DOCTYPE html>
+
+<title>Competency Centre</title><!DOCTYPE html>
 <html lang="en">
   <head></head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>competency centre</title>
+  <title></title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
-  <!--script(src='js/app.js')-->
 </html>
 <body>
-  <header class="page-header wrapper">
-    <div class="header-logo"><a href="/" title="Competency Centre" class="header-logo__link"></a></div>
-    <nav class="header-nav">
-      <ul class="header-nav__list">
-        <li class="header-nav__item"><a href="#" title="News" class="header-nav__link header-nav__link_active">News</a></li>
-        <li class="header-nav__item"><a href="#" title="Members" class="header-nav__link">Members</a></li>
-        <li class="header-nav__item"><a href="#" title="Events" class="header-nav__link">Events</a></li>
-        <li class="header-nav__item"><a href="#" title="Trainings" class="header-nav__link">Trainings</a></li>
+  <header class="page-header">
+    <div class="wrapper">
+      <div class="header-logo"><a href="/" title="Competency Centre" class="header-logo__link"></a></div>
+      <nav class="header-nav">
+        <ul class="header-nav__list">
+          <li class="header-nav__item"><a href="#" title="News" class="header-nav__link header-nav__link_active">News</a></li>
+          <li class="header-nav__item"><a href="#" title="Members" class="header-nav__link">Members</a></li>
+          <li class="header-nav__item"><a href="#" title="Events" class="header-nav__link">Events</a></li>
+          <li class="header-nav__item"><a href="#" title="Trainings" class="header-nav__link">Trainings</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-nav-menu-toggle header-nav-menu-toggle_active"></div>
+    <nav class="header-nav-mobile">
+      <div class="header-nav-mobile__close-button"></div>
+      <ul class="header-nav-mobile__list">
+        <li class="header-nav-mobile__item"><a href="#" title="News" class="header-nav-mobile__link">News</a></li>
+        <li class="header-nav-mobile__item"><a href="#" title="Members" class="header-nav-mobile__link">Members</a></li>
+        <li class="header-nav-mobile__item"><a href="#" title="Events" class="header-nav-mobile__link">Events</a></li>
+        <li class="header-nav-mobile__item"><a href="#" title="Trainings" class="header-nav-mobile__link">Trainings</a></li>
       </ul>
     </nav>
   </header>
   <div class="main-slider">
-    <ul class="main-slider__image-container">
-      <li class="main-slider__item"></li>
-    </ul>
+    <div class="main-slider__image-container">
+      <div class="main-slider__item main-slider__item_1"></div>
+    </div>
+    <div class="main-slider__contols-container wrapper"></div>
   </div>
   <section class="main-content wrapper clear">
     <section class="news">
@@ -149,4 +162,6 @@
       <div class="main-footer__epam-made">We Are Made In &lt;EPAM&gt; Systems</div>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="js/app.js"></script>
 </body>

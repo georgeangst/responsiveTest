@@ -1,30 +1,47 @@
+title= 'Competency Centre'
+
 doctype html
 html(lang="en")
 	head
 	meta(name='viewport', content='width=device-width, initial-scale=1.0')
-	title competency centre
+	title= competencCentre
 	link(rel='stylesheet', href='css/reset.css')
 	link(rel='stylesheet', href='css/main.css')
-	//script(src='js/app.js')
 
 body
-	header.page-header.wrapper
-		.header-logo
-			a.header-logo__link(href='/', title='Competency Centre')
-		nav.header-nav
-			ul.header-nav__list
-				li.header-nav__item
-					a.header-nav__link.header-nav__link_active(href='#', title='News') News
-				li.header-nav__item
-					a.header-nav__link(href='#', title='Members') Members
-				li.header-nav__item
-					a.header-nav__link(href='#', title='Events') Events
-				li.header-nav__item
-					a.header-nav__link(href='#', title='Trainings') Trainings
+	header.page-header
+		.wrapper
+			.header-logo
+				a.header-logo__link(href='/', title='Competency Centre')
+			nav.header-nav
+				ul.header-nav__list
+					li.header-nav__item
+						a.header-nav__link.header-nav__link_active(href='#', title='News') News
+					li.header-nav__item
+						a.header-nav__link(href='#', title='Members') Members
+					li.header-nav__item
+						a.header-nav__link(href='#', title='Events') Events
+					li.header-nav__item
+						a.header-nav__link(href='#', title='Trainings') Trainings
+
+		.header-nav-menu-toggle.header-nav-menu-toggle_active
+
+		nav.header-nav-mobile
+			.header-nav-mobile__close-button
+			ul.header-nav-mobile__list
+				li.header-nav-mobile__item
+					a.header-nav-mobile__link(href='#', title='News') News
+				li.header-nav-mobile__item
+					a.header-nav-mobile__link(href='#', title='Members') Members
+				li.header-nav-mobile__item
+					a.header-nav-mobile__link(href='#', title='Events') Events
+				li.header-nav-mobile__item
+					a.header-nav-mobile__link(href='#', title='Trainings') Trainings
 
 	.main-slider
-		ul.main-slider__image-container
-			li.main-slider__item
+		.main-slider__image-container
+			.main-slider__item.main-slider__item_1
+		.main-slider__contols-container.wrapper
 
 	section.main-content.wrapper.clear
 		section.news
@@ -138,3 +155,6 @@ body
 				a.main-footer__link(href='#', title='About Us') About Us
 				a.main-footer__link(href='#', title='Contact Us') Contact Us
 			.main-footer__epam-made We Are Made In &lt;EPAM&gt; Systems
+
+	script(src='https://code.jquery.com/jquery-2.1.3.min.js')
+	script(src='js/app.js')

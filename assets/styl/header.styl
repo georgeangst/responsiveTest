@@ -1,0 +1,96 @@
+.page-header
+  height: 90px
+  position: relative
+  background: #fff
+
+.header-logo
+  float: left
+  height: 100%
+  width: 160px
+
+.header-logo__link
+  width 100%
+  height: 100%
+  background: url(../img/logo.png) 0 15px no-repeat
+  display: block
+
+.header-nav
+  float: right
+  height: 100%
+
+.header-nav__list
+  height: inherit
+
+.header-nav__item
+  line-height: 90px
+  height: 100%
+  margin-left: 20px
+  float: left
+  text-align: center
+  display: inline-block
+  &:first-child
+    margin-left: 0
+  &:before
+    content: ''
+    display: inline-block
+    vertical-align: middle
+    height: 100%
+    width: 0
+
+.header-nav__link
+  line-height: 24px
+  font-size: 22px
+  display: inline-block
+  vertical-align: middle
+  color: #778081
+  padding: 2px 0
+  text-decoration: none
+
+.header-nav__link_active
+  border-bottom: 2px solid $mainRed
+  color: #454545
+  cursor: default
+
+.header-nav-mobile
+  position: fixed
+  right: 0
+  top: 0
+  height: 100%
+  width: 180px
+  background: rgba(192,42,49, 0.9)
+  padding-top: 120px
+  z-index: 5
+  display: none
+
+.header-nav-menu-toggle
+  position: absolute
+  right: 33px
+  top: 38px
+  width: 28px
+  height: 22px
+  background-image: url(../img/burger_menu_mobile.png)
+  background-repeat: no-repeat
+  background-position: 0 0
+  display: none
+  cursor: pointer
+
+.header-nav-mobile__close-button
+  width: 24px
+  height: 24px
+  position: absolute
+  right: 33px
+  top: 38px
+  background: url(../img/close_mobile.png) 0 0 no-repeat
+  cursor: pointer
+
+.header-nav-mobile__item
+  text-align: right
+  padding-right: 30px
+  
+.header-nav-mobile__link
+  text-decoration: none
+  color: #fff
+  font-size: 26px
+  line-height: 50px
+
+  

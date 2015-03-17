@@ -1,0 +1,96 @@
+@media (max-width: 1200px)
+  .wrapper
+    width: 940px
+
+@media (max-width: 1000px)
+  .wrapper
+    width: 100%
+    padding-left: 30px
+    padding-right: 30px
+  .main-footer__copyrights
+    left: 30px
+  .main-footer__epam-made
+    right: 30px
+
+@media (max-width: 800px)
+  .main-page-article
+    col(1)
+    margin-bottom: 50px
+    &:last-child
+      margin-bottom: 0
+  .news
+    stack()
+    margin-bottom: 50px
+  .conference-agenda
+    col(1/2)
+  .members
+    col(1/2)
+  .social-links__item
+    margin-left: 60px
+  .main-footer
+    height: 150px
+    text-align: center
+  .main-footer__copyrights
+    position: static
+    line-height: 50px
+  .main-footer__nav
+    line-height: 50px
+  .main-footer__epam-made
+    position: static
+    line-height: 50px
+
+@media (max-width: 660px)
+  .header-nav
+    display: none
+  .header-nav-menu-toggle_active
+    display: block
+  .header-nav-mobile_active
+    display: block
+  .social-links__item
+    margin-left: 30px
+
+@media (max-width: 520px)
+  .social-links__item
+    margin-left: 20px
+    width: 29px
+    height: 29px
+
+  .news, .conference-agenda, .members
+    col(1)
+    margin-bottom: 50px
+    &:last-child
+      margin-bottom: 0
+
+  .main-page-article__image
+    float: none
+    margin: 0 0 20px 0
+    width: 100%
+
+  .social-links__link_facebook
+    background-image: url(../img/Facebook_mobile.png)
+  .social-links__link_twitter
+    background-image: url(../img/Twitter_mobile.png)
+  .social-links__link_linkedin
+    background-image: url(../img/Linkedin_mobile.png)
+  .social-links__link_instagram
+    background-image: url(../img/Instagram_mobile.png)
+  .social-links__link_googleplus
+    background-image: url(../img/Google_mobile.png)
+  .social-links__link_youtube
+    background-image: url(../img/Youtube_mobile.png)
+
+  @media (-webkit-min-device-pixel-ratio: 2),  (min-resolution: 192dpi)
+    .social-links__link
+      background-size: 29px 29px
+    .social-links__link_facebook
+      background-image: url(../img/Facebook_mobile@2x.png)
+    .social-links__link_twitter
+      background-image: url(../img/Twitter_mobile@2x.png)
+    .social-links__link_linkedin
+      background-image: url(../img/Linkedin_mobile@2x.png)
+    .social-links__link_instagram
+      background-image: url(../img/Instagram_mobile@2x.png)
+    .social-links__link_googleplus
+      background-image: url(../img/Google_mobile@2x.png)
+    .social-links__link_youtube
+        background-image: url(../img/Youtube_mobile@2x.png)
