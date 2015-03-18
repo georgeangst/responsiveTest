@@ -1,160 +1,36 @@
-title= 'Competency Centre'
+extends partials/layout
 
-doctype html
-html(lang="en")
-	head
-	meta(name='viewport', content='width=device-width, initial-scale=1.0')
-	title= competencCentre
-	link(rel='stylesheet', href='css/reset.css')
-	link(rel='stylesheet', href='css/main.css')
+block content
+	body
+		include partials/header
+		include partials/main-slider
 
-body
-	header.page-header
-		.wrapper
-			.header-logo
-				a.header-logo__link(href='/', title='Competency Centre')
-			nav.header-nav
-				ul.header-nav__list
-					li.header-nav__item
-						a.header-nav__link.header-nav__link_active(href='#', title='News') News
-					li.header-nav__item
-						a.header-nav__link(href='#', title='Members') Members
-					li.header-nav__item
-						a.header-nav__link(href='#', title='Events') Events
-					li.header-nav__item
-						a.header-nav__link(href='#', title='Trainings') Trainings
+		section.main-content.wrapper.clear
+			include partials/news
+			include partials/conference-agenda
+			include partials/members
 
-		.header-nav-menu-toggle.header-nav-menu-toggle_active
+		section.main-content.wrapper.clear
+			article.main-page-article
+				h2.main-title Last Article
+				section
+					img.main-page-article__image.main-page-article__image_align-left(src='img/photo_1.png', alt='')
+					h2.main-page-article__title Born and I will give of the system, and expound the plorer of the truth
+					p.main-page-article__p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+					p.main-page-article__p Lorem Ipsum is simply dustry. Lorem Ipsndustry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+					p.main-page-article__p Lorem Ipsum is simply dummy text of the pretting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+					p.main-page-article__p Lorem Ipsum is simp Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 
-		nav.header-nav-mobile
-			.header-nav-mobile__close-button
-			ul.header-nav-mobile__list
-				li.header-nav-mobile__item
-					a.header-nav-mobile__link(href='#', title='News') News
-				li.header-nav-mobile__item
-					a.header-nav-mobile__link(href='#', title='Members') Members
-				li.header-nav-mobile__item
-					a.header-nav-mobile__link(href='#', title='Events') Events
-				li.header-nav-mobile__item
-					a.header-nav-mobile__link(href='#', title='Trainings') Trainings
+			article.main-page-article
+				h2.main-title Centre Life
+				section
+					img.main-page-article__image.main-page-article__image_align-right(src='img/photo_2.png', alt='')
+					h2.main-page-article__title Born and I will give of the system, and expound the plorer of the truth
+					p.main-page-article__p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unkard dummy text ever since the 1500s, when an unknown
+					p.main-page-article__p Lorem Ipsum is simply dummy text of tfry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unkard dummy text ever since the 1500s, when an unknown
+					p.main-page-article__p Lorem Ipsum is simply dummy text of the printing aindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unkard dummy text ever since the 1500s, when an unknown
+					p.main-page-article__p Lorem Ipsum is simply dufsdfmmy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ste 1500s, when an unkard dummy text ever since the 1500s, when an unknown
 
-	.main-slider
-		.main-slider__image-container
-			.main-slider__item.main-slider__item_1
-		.main-slider__contols-container.wrapper
 
-	section.main-content.wrapper.clear
-		section.news
-			h2.main-title Competency News
-			.news__item
-				.news__date 12.01.2015
-				.news__title Sed ut perspiciatis unde omnis iste natus error sit voluptatem to iste natus
-				.news__content But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will f the system, and expound great explorer of the truth, the master.
-
-			.news__item
-				.news__date 12.01.2015
-				.news__title Sed ut perspiciatis unde omnis iste natus
-				.news__content But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give of the system, and expound the plorer of the truth, the master.
-
-			.news__item
-				.news__date 12.01.2015
-				.news__title Sed ut perspiciatis unde omnis
-				.news__content But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give of the system, and expound the plorer of the truth, the master.
-
-		section.conference-agenda
-			h2.main-title Conference Agenda
-			ul.conference-agenda__list
-				li.conference-agenda__item
-					.conference-agenda__period 10:00 - 12:00
-					.conference-agenda__description This mistaken
-				li.conference-agenda__item
-					.conference-agenda__period 12:00 - 12:45
-					.conference-agenda__description Explain to you
-				li.conference-agenda__item
-					.conference-agenda__period 12:45 - 16:40
-					.conference-agenda__description Denouncing pleasure
-				li.conference-agenda__item
-					.conference-agenda__period 16:40 - 17:40
-					.conference-agenda__description Coffee break
-				li.conference-agenda__item
-					.conference-agenda__period 17:40 - 18:50
-					.conference-agenda__description Pain was born and I will
-				li.conference-agenda__item
-					.conference-agenda__period 18:50 - 19:25
-					.conference-agenda__description And I will
-				li.conference-agenda__item
-					.conference-agenda__period 20:00 - 23:00
-					.conference-agenda__description Fun Afterparty
-
-		section.members
-			h2.main-title Members List
-			ul.members__list
-				li.members__item
-					.members__name Cheryl James
-					.members__city Villeurbane
-				li.members__item
-					.members__name Maria Celly
-					.members__city Asnieres-sur-Seine
-				li.members__item
-					.members__name Carolyn Eliot
-					.members__city Caen
-				li.members__item
-					.members__name Cristine Estrada
-					.members__city Besancon
-				li.members__item
-					.members__name Anna Howell
-					.members__city La Rochelle
-				li.members__item
-					.members__name Chirstine McDonald
-					.members__city Saint-Etienne
-				li.members__item
-					.members__name Sharon Wheeller
-					.members__city Caen
-
-	section.main-content.wrapper.clear
-		article.main-page-article
-			h2.main-title Last Article
-			section
-				img.main-page-article__image.main-page-article__image_align-left(src='img/photo_1.png', alt='')
-				h2.main-page-article__title Born and I will give of the system, and expound the plorer of the truth
-				p.main-page-article__p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-				p.main-page-article__p Lorem Ipsum is simply dustry. Lorem Ipsndustry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-				p.main-page-article__p Lorem Ipsum is simply dummy text of the pretting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-				p.main-page-article__p Lorem Ipsum is simp Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-
-		article.main-page-article
-			h2.main-title Centre Life
-			section
-				img.main-page-article__image.main-page-article__image_align-right(src='img/photo_2.png', alt='')
-				h2.main-page-article__title Born and I will give of the system, and expound the plorer of the truth
-				p.main-page-article__p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unkard dummy text ever since the 1500s, when an unknown
-				p.main-page-article__p Lorem Ipsum is simply dummy text of try. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unkard dummy text ever since the 1500s, when an unknown
-				p.main-page-article__p Lorem Ipsum is simply dummy text of the printing aindustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unkard dummy text ever since the 1500s, when an unknown
-				p.main-page-article__p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ste 1500s, when an unkard dummy text ever since the 1500s, when an unknown
-
-	section.wrapper.social-links
-		ul.social-links__list
-			li.social-links__item
-				a.social-links__link.social-links__link_facebook(href='#', title='Facebook') Facebook
-			li.social-links__item
-				a.social-links__link.social-links__link_twitter(href='#', title='Twitter') Twitter
-			li.social-links__item
-				a.social-links__link.social-links__link_linkedin(href='#', title='LinkedIn') LinkedIn
-			li.social-links__item
-				a.social-links__link.social-links__link_instagram(href='#', title='Instagram') Instagram
-			li.social-links__item
-				a.social-links__link.social-links__link_googleplus(href='#', title='Google+') Google+
-			li.social-links__item
-				a.social-links__link.social-links__link_youtube(href='#', title='YouTube') YouTube
-
-	footer.main-footer
-		.wrapper.wrapper_relative
-			.main-footer__copyrights Copyright &copy; 2015 Java Competency Centre
-			nav.main-footer__nav
-				a.main-footer__link(href='#', title='Help') Help
-				a.main-footer__link(href='#', title='About Us') About Us
-				a.main-footer__link(href='#', title='Contact Us') Contact Us
-			.main-footer__epam-made We Are Made In &lt;EPAM&gt; Systems
-
-	script(src='https://code.jquery.com/jquery-2.1.3.min.js')
-	script(src='js/app.js')
+		include partials/social-links
+		include partials/footer

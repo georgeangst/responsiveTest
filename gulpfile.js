@@ -47,7 +47,7 @@ gulp.task('images', function(){
 });
 
 gulp.task('watch', function(){
-	gulp.watch(['./assets/template/*.jade'], ['jade']);
+	gulp.watch(['./assets/template/**/*.jade'], ['jade']);
 	gulp.watch(['./assets/styl/*.styl'], ['stylus']);
 	gulp.watch(['./assets/js/**/*.js'], ['js']);
 	//gulp.watch(['./assets/img/**/*.jpg', './assets/img/**/*.png', './assets/img/**/*.gif'], ['images']);
