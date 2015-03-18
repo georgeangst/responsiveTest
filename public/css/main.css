@@ -128,7 +128,7 @@ body {
   z-index: 5;
   display: none;
 }
-.header-nav-menu-toggle {
+.header-nav-mobile-menu-toggle {
   position: absolute;
   right: 33px;
   top: 38px;
@@ -627,7 +627,7 @@ body {
   .header-nav {
     display: none;
   }
-  .header-nav-menu-toggle_active {
+  .header-nav-mobile-menu-toggle_active {
     display: block;
   }
   .header-nav-mobile_active {
